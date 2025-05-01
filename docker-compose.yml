@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  message-db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+
+  es:
+    image: elasticsearch:8.13.3
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200" # HTTP
+      - "9300:9300" # Transport
+
