@@ -1,7 +1,7 @@
 # Simple Example
 
-This repo serves as a simple example of how one can use [my message db connector](https://github.com/stetsmando/message-db-connector-ts) to create event sourced applications.
-This is by no means exhaustive, but can serve as an example. If you're interested for any reason, feel free to download the code and take a look.
+This repo serves as a simple example of how one can use [my message db connector](https://github.com/stetsmando/message-db-connector-ts) library to create event-sourced applications.
+This is by no means exhaustive, but can serve as a starting point. If you're interested for any reason, feel free to download the code and take a look. Also, reach out to me if you have questions.
 
 ## Prerequisites
 
@@ -73,4 +73,9 @@ curl -X GET "localhost:9200/drones/_search?pretty&size=10" -H 'Content-Type: app
 }
 '
 ```
+## Missing Items Still Needed
+- [ ] Full test suite
+- [ ] Api based searching
+- [ ] Persistent storage in a relational db (Postgres) for the Listings
+
 
