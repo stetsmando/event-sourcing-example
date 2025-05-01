@@ -18,12 +18,6 @@ gh repo clone stetsmando/message-db-connector-ts
 
 2. Install deps
 ```bash
-# npm
-npm install
-
-# yarn
-yarn install
-
 # deno
 deno install
 ```
